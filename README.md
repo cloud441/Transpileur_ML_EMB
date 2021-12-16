@@ -1,15 +1,15 @@
 # Transpileur\_ML\_EMB
-transpileur Python --> C pour construire un fichier C de prédiction basé sur une régression linéaire entrainé en Python avec sklearn.
+transpileur Python --> C pour construire un fichier C de prédiction basé sur une régression linéaire entrainée en Python avec sklearn.
 
 ## Setup:
 
-Ce tutoriel suppose que vous etes sous linux.
+Ce tutoriel suppose que vous êtes sous linux.
 Si jamais ce n'est pas le cas, cherchez comment lancer un environnement virtuel Python sur votre platforme,
-ainsi que compiler et executer du code C avec GCC.
+ainsi que compiler et exécuter du code C avec GCC.
 
 Sous Linux veuillez suivre ces commandes:
 
-(sautez ces etapes dans le cas ou vous ne voulez pas d'environnement virtuel.)
+(sautez ce bloc dans le cas où vous ne voulez pas d'environnement virtuel.)
 ```sh
 virtualenv transpi_env
 source transpi_env/bin/activate
@@ -22,7 +22,7 @@ gcc -o predictor prediction.c
 ./predictor
 ```
 
-## Fichiers crees:
+## Fichiers créés:
 
-* lin\_reg.sav: modele de la regression lineaire sauvegarde grace a Joblib.
-* prediction.c: code C permettant la prediction.
+* lin\_reg.sav: modèle de la régression linéaire sauvegardé grâce à Joblib.
+* prediction.c: code C permettant la prédiction.
